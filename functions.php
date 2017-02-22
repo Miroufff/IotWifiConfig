@@ -3,7 +3,7 @@
 	{
 		if ($_POST) {
 			if ($_POST["SSID"] && $_POST["password"]) {
-				$fileName = "/var/local/wpa.txt";
+				$fileName = "/var/local/IotWifiConf/wpa.txt";
 				$content = $_POST["SSID"] . "\n" . $_POST["password"] . "\n" . $_POST["deviceName"] . "\n" . $_POST["apiUrl"];
 
                 if ($file = fopen($fileName, "w+")) {
